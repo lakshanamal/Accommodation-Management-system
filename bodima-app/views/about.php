@@ -22,8 +22,8 @@
     </div> 
     <div class="details">
         <h1>Project Name</h1>
-        <p> Hi, We are undergradulates of the University Of Colombo School of Computing. This platform is a result of our 2nd year group project. We analyze the problems faced by university students. We identified two major issues facing university students by that analysis. those main problems were:
-         <br/> dificulties of normal process of finding accommodation to stay. Another is to provide food. We created this platform to help them as well as facilitate them. </p>
+        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis laborum quae non nisi, incidunt est veniam amet facere reprehenderit dolore cumque, aliquam hic corrupti officiis quibusdam quam cum beatae sit!
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta deserunt adipisci expedita quas! Rerum animi non quia officiis vero libero minima eos. Quis reprehenderit dolor autem nesciunt? Magni, tempore perspiciatis. </p>
          <div class="profile-pic">
              <img src="../resource/img/ishan.jpg" alt="">
              <img src="../resource/img/nimasha.jpg" alt="">

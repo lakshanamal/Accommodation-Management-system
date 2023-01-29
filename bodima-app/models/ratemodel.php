@@ -19,14 +19,9 @@ class rating{
 
 
     public static function postRating($rating_B_post_id,$email,$starRate,$rateMsg,$date,$name,$connection){
-
-        //$hh=$Hnumber;
-        //echo $hh;
-        //echo $individual;
-        //echo "dssssss";
         
-        echo $query="INSERT INTO rate (rateid,ratingpostid,email,uName,uReview,uMsg,dReview)
-        VALUES(null,'{$rating_B_post_id}','{$email}','{$name}','{$starRate}','{$rateMsg}','{$date}')";
+        $query="INSERT INTO rate (ratingpostid,email,uName,uReview,uMsg,dReview)
+        VALUES('{$rating_B_post_id}','{$email}','{$name}','{$starRate}','{$rateMsg}','{$date}')";
       
       //die();
       $result=mysqli_query($connection,$query);

@@ -60,7 +60,6 @@ $(document).ready(function() {
             $.ajax({
                 url: "../controller/rateCon.php",
                 type: "POST",
-                //dataType: "json",
                 data: {
                     starRate: starRate,
                     rateMsg: rateMsg,
@@ -68,10 +67,7 @@ $(document).ready(function() {
                     name: name
                 },
                 success: function(data) {
-                    //window.location = "index.php";
                     window.location.reload();
-                    //console.log(data);
-                    //window.location = "rate.php"
                 }
 
             })
@@ -79,3 +75,7 @@ $(document).ready(function() {
         }
     })
 });
+
+function openAddReviewModel(){
+      document.getElementById("review-model").style.display = "block";
+}
