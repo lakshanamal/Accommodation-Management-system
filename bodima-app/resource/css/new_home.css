@@ -252,7 +252,7 @@ p{
       /* position: absolute; */
       left: 0;
       top: 65px;
-      width: 200px;
+      width: 100px;
       height: 100vh;
       bottom: 0;
       background-color: #101e5a;
@@ -270,7 +270,7 @@ p{
       /* position: absolute; */
       left: 0;
       top: 65px;
-      width: 200px;
+      width: 300px;
       height: 100vh;
       display: flex;
       flex-direction: row;
@@ -290,7 +290,7 @@ p{
       cursor: pointer;
       font-weight: 800;
       opacity: 0;
-      width: 150px;
+      width: 200px;
   }
   .slide-nav-animate ul li{
       padding: 30px 0;
@@ -298,7 +298,7 @@ p{
       /* transition: 0.5s; */
       font-weight: 800;
       opacity: 0;
-      width: 150px;
+      width: 200px;
   }
   .slide-nav-animate ul li:hover{
       color: rgb(0, 0, 0);

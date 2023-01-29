@@ -55,6 +55,12 @@ body{
     font-size: 14px;
 }
 
+.home{
+    color: black !important;
+    background-color: white !important;
+}
+
+
 .container{
     width: 100%;
     display: flex;
@@ -311,6 +317,8 @@ input[type="radio"]:checked+label::before {
     box-shadow:inset  0 1px 0 rgba(255,255,255,0.0125), 0 1px 1px rgba(0,0,0,0.05);
     cursor: pointer;
     outline: none;
+    border-radius: 5px;
+    margin-bottom: 5px;
 }
 
 .resend{
@@ -329,14 +337,10 @@ input[type="radio"]:checked+label::before {
    
 }
 
-/**********************newly added**************************/
-
 .emailerror{
     color: red;
     font-family: 'Arno Pro Subhead';
     padding:10px;
 }
-
-
 
 

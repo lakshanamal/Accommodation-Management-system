@@ -16,7 +16,6 @@ $('#boardingReg').on('submit',function(){
         dataType:"json",
         success:function(data)
         {
-            console.log(data.level);
             if(data.state=='unsucess'){
                 if(data.pass!=""){
                     $('#passError').html(data.pass);

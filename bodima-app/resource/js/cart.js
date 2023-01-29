@@ -74,7 +74,6 @@ function formSheduleValidate()
 {
   var startDate=$('#startDate').val();
   var endDate=$('#endDate').val();
-  console.log(startDate);
   var inpStart=new Date(startDate);
   var inpEnd=new Date(endDate);
   var today= new Date();
@@ -121,14 +120,12 @@ function formSheduleValidate()
 $(window).on('load', function () {
   var url=new URL(window.location.href);
   var postId = url.searchParams.get("Pid");
-  console.log(postId);
   $.ajax({
     type: "POST",
     url: "../controller/notificationCon.php",
     data:{postId:postId},
     dataType: "json",
     success: function (data) {
-      console.log(data);
       if(data.available==0)
       {
         document.querySelectorAll('.unavailable').forEach(function(element){
@@ -153,7 +150,6 @@ $(window).on('load', function () {
       }
       if(data.term=="Short Term")
       {
-        console.log(document.querySelector('.term'));
       document.querySelector('.term').innerHTML="<h4>\"Long term food delivery not support this restaurent\"</h4>";
       }
       if(data.term=="Both")
@@ -181,7 +177,7 @@ $(document).on('keypress','#breakfast-search', function (e) {
       document.getElementById('b'+element.innerHTML).style.display='none';
       if(element.innerHTML.match(myPattern))
       {
-        console.log('ok');
+    
         document.getElementById('b'+element.innerHTML).style.display='block';
       }
       
@@ -204,7 +200,6 @@ $(document).on('keypress','#lunch-search', function (e) {
       document.getElementById('l'+element.innerHTML).style.display='none';
       if(element.innerHTML.match(myPattern))
       {
-        console.log('ok');
         document.getElementById('l'+element.innerHTML).style.display='block';
       }
       
@@ -227,10 +222,8 @@ $(document).on('keypress','#dinner-search', function (e) {
       document.getElementById('d'+element.innerHTML).style.display='none';
       if(element.innerHTML.match(myPattern))
       {
-        console.log('ok');
         document.getElementById('d'+element.innerHTML).style.display='block';
       }else{
-        console.log('ok');
       }
       
     })
@@ -246,7 +239,6 @@ function deadLine(){
   var lunch=document.getElementById('2');
   var dinner=document.getElementById('3');
   var hour=date.getHours();
-  console.log(hour);
   if(hour<=11){
     breakfast.checked=true;
     document.getElementById('breakfast').classList.add('checked');

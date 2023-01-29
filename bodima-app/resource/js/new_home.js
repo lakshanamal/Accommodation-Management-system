@@ -1,8 +1,7 @@
 function textAppere(x)
 {
         var text=document.querySelector(x);  // get text tag
-        var starText=text.textContent; 
-        console.log(starText);          //only get sentence 
+        var starText=text.textContent;         //only get sentence 
         var splitText=starText.split("");   // split each letter w
         // console.log(splitText);
         text.textContent="";  // text tag eka empty karanawa

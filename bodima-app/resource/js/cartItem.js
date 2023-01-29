@@ -97,7 +97,6 @@ function shedule(){
           fromMin=(timeStart)%60;
           toHour=Math.floor(i+0.5)
           toMin=(timeStart+30)%60;
-        console.log(document.querySelector('.shedule-time'));
         timeRange+='<option value="'+ampmFormat(fromHour,fromMin)+'-'+ampmFormat(toHour,toMin)+'">'+ampmFormat(fromHour,fromMin)+'-'+ampmFormat(toHour,toMin)+'</option>';
         timeStart+=30;
       }

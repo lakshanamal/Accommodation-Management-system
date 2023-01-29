@@ -9,7 +9,6 @@ $('#resetForm').on('submit',function(){
         dataType:"json",
         success:function(data)
         {
-            console.log(data);
             if(data.pass!=""){
                 $('#passError').html(data.pass);
                 $('#password').css("background-color", "rgb(255, 224, 224)");

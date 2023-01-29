@@ -11,7 +11,6 @@ $(document).ready(function () {
             data:{userDetails:"userDetails",year:year,month:month},
             dataType:"json",
             success:function (data) {
-                console.log(data);
                 $('#stu').html(data.student);
                 $('#boa').html(data.boarder);
                 $('#foodSupplier').html(data.food_supplier);
@@ -45,7 +44,6 @@ $(document).ready(function () {
             data:{userDetails:"userDetails",year:year,month:month},
             dataType:"json",
             success:function (data) {
-                console.log(data);
                 $('#stu').html(data.student);
                 $('#boa').html(data.boarder);
                 $('#foodSupplier').html(data.food_supplier);

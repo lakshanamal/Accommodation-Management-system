@@ -45,7 +45,6 @@ $('#userPDF').click(function(){
     var reportName=$('#reportName').text();
     htmlDetail=htmlDetails.trim();
     htmlDetail=''+htmlDetails+'';
-    console.log(htmlDetail.trim());
     htmlDetails=encodeURIComponent(htmlDetails);
     window.location="../controller/adminPanelCon.php?userPDF="+htmlDetails+"&name="+reportName;
 })

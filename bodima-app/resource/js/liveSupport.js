@@ -12,7 +12,6 @@ $(document).ready(function () {
                   data: {chat:chat},
                   dataType: "json",
                   success: function (data) {
-                      console.log(data.email);
                       message+='<div class="user-profile-details">'+
                       '<div class="avater">'+
                           '<h3>A</h3>'+
@@ -58,7 +57,6 @@ $(document).ready(function () {
   });
   function getChatUsers() {
       var getUsers="users";
-      console.log('hello');
       var users="";
       $.ajax({
           type: "post",
@@ -66,7 +64,6 @@ $(document).ready(function () {
           data: {user:getUsers},
           dataType: "json",
           success: function (data) {
-              console.log(data);
               for(var i=0;i<data.chatUser.length;i++)
               {
                   var userEmail=data.chatUser[i][2];
@@ -107,7 +104,6 @@ $(document).ready(function () {
         {
             userEmail=userEmail.innerHTML;
         }
-        console.log(userEmail);
         $.ajax({
             type: "post",
             url: "../controller/chatCon.php",
@@ -204,5 +200,4 @@ $(document).ready(function () {
    function back(){
       document.querySelector('.live-content-admin').style.display="none";
       getChatUsers();
-      console.log( document.querySelector('.live-content-admin'));
    }

@@ -181,11 +181,10 @@
                                         data:{cancel:cardOrder},
                                         dataType:"json",
                                         success:function(data){
-                                            console.log(data)
+                                      
                                         },
                                         error: function (xhr, ajaxOptions, thrownError) {
-                                            console.log(xhr.status);
-                                            console.log(thrownError);
+                        
                                         }
                                     })
                                 }
@@ -193,7 +192,6 @@
                                     document.getElementById('minute<?php echo $x; ?>').innerHTML=data.minute+'min';
                                     document.getElementById('secound<?php echo $x; ?>').innerHTML=data.secound+'sec';
                                 }
-                             console.log(data);
                                 
                             }
                               })

@@ -29,7 +29,6 @@
             dataType:"json",
             success:function(data)
 			{
-                console.log(data);
                 if(data.breakfast+data.lunch+data.dinner+data.longTerm!=0)
                 {   $('#noti-order').css("display","block");
                     $('#noti-order h5').html(data.breakfast+data.lunch+data.dinner+data.longTerm);
@@ -192,7 +191,6 @@
             data:{checkAvailable:'check'},// send to controller
             dataType: "json",
             success: function (data) {
-                console.log(data);
                 if(data.available=="0")
                 {
                     availWord.style.color='#ffca0a';

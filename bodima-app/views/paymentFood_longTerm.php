@@ -166,7 +166,7 @@
                                                             data:{date:date,orderId:orderId},
                                                             dataType: "json",
                                                             success: function (data) {
-                                                               console.log(data);
+                                                           
                                                                 if(data.date=='qual' && data.delivery==0 )
                                                                 {                                                       
                                                                     stateBtn.style.backgroundColor='#0093FF'; 
@@ -220,7 +220,7 @@
                                                             data:{dateUp:date,orderIdUp:orderId},
                                                             dataType: "json",
                                                             success: function (data) {
-                                                                console.log(data); 
+                                                    
                                                                 stateBtn.style.backgroundColor='black';  
                                                                 stateBtn.innerHTML='Received';
                                                                 stateBtn.disabled=true; 

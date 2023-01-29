@@ -57,9 +57,6 @@ $(document).ready(function() {
             var date = $form.find(".rateDate").val();
             var name = $form.find(".rateName").val();
 
-            console.log($form);
-            console.log(starRate);
-            console.log(rateMsg);
             $.ajax({
                 url: "../controller/rateCon.php",
                 type: "POST",

@@ -10,7 +10,6 @@ $(document).ready(function () {
             data:{foodDetails:"foodDetails",year:year,month:month},
             dataType:"json",
             success:function (data) {
-                console.log(data);
                 $('#countSB').html(data.countSB);
                 $('#countSL').html(data.countSL);
                 $('#countSD').html(data.countSD);
@@ -56,7 +55,6 @@ $(document).ready(function () {
             data:{foodDetails:"foodDetails",year:year,month:month},
             dataType:"json",
             success:function (data) {
-                console.log(data);
                 $('#countSB').html(data.countSB);
                 $('#countSL').html(data.countSL);
                 $('#countSD').html(data.countSD);

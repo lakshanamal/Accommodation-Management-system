@@ -350,7 +350,6 @@ session_start();
 								data:{deletePost:'nima'},
 								dataType:"json",
 								success:function(data){
-									console.log(data);
 									//window.location = "../controller/profile_controlN.php?profile=1";
 								}
 						});	

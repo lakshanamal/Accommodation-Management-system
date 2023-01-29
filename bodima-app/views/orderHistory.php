@@ -18,7 +18,6 @@
 <script>
     function orderType(id)
 {
-    console.log("jhbchbhcd");
     const order=document.getElementById(id);
     const breakfast=document.getElementById('breakfast-box');
     const lunch=document.getElementById('lunch-box');

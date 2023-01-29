@@ -184,7 +184,6 @@
                                 document.getElementById('secound<?php echo $x; ?>').innerHTML=data.secound+'sec';
                                 
                                 }
-                                console.log(data);
                                 if(data.state==1 || data.state==3)
                                 {
                                         document.querySelector('.orderAccept').classList.add('orderAccept-active');

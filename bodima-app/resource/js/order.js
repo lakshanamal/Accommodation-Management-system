@@ -23,7 +23,6 @@ const shortTermfastFocus=document.getElementById('shortTerm');
 
 function focus_food(){
     window.addEventListener('load',(e)=>{ 
-        console.log('hi');
         breakfastFocus.style.backgroundColor='orange';
         })
     breakfastFocus.addEventListener('click',(e)=>{

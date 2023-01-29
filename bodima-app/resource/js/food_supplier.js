@@ -16,7 +16,6 @@ $('#foodReg').on('submit',function(){
         dataType:"json",
         success:function(data)
         {
-            console.log(data);
             if(data.state=='unsucess'){
                 if(data.pass!=""){
                     $('#passError').html(data.pass);
@@ -42,7 +41,7 @@ $('#foodReg').on('submit',function(){
                     $('#merchant').css("background-color", "#b8bcc4");             
                 }
             }else if(data.state=='sucess'){
-                console.log("hello");
+
                 window.location='emailVerify.php?email='+data.email+'&token='+data.token+'&level='+'food_supplier';
             }
           

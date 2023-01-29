@@ -9,6 +9,15 @@ class orderModel{
         VALUES('{$Fpid}','{$email}','{$address}','{$first_name}','{$last_name}',0,'{$total}','{$phone}','{$method}','{$time}','{$expireTime}','{$name}','{$order_id}','{$order_type}','{$term}','{$shedule}')";
          $result=mysqli_query($connection,$query);
     }
+
+    public static function card_payment_food_request($Fpid, $email, $address, $first_name, $last_name, $order_id, $order_type, $term, $shedule, $total, $phone, $method, $time, $expireTime, $name, $connection)
+    {
+        $query = "INSERT INTO food_request (F_post_id,email,address,first_name,last_name,is_accepted,total,phone,method,time,expireTime,restaurant,order_id,order_type,term,shedule) 
+        VALUES('{$Fpid}','{$email}','{$address}','{$first_name}','{$last_name}',3,'{$total}','{$phone}','{$method}','{$time}','{$expireTime}','{$name}','{$order_id}','{$order_type}','{$term}','{$shedule}')";
+        $result = mysqli_query($connection, $query);
+    }
+
+
     // order food item insert to table
     public static function food_item($item_name,$quantity,$order_id,$connection)
     {

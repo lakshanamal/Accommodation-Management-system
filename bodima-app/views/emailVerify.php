@@ -32,6 +32,7 @@
         <input type="hidden" name="level" value="<?php echo $_GET['level']; ?>" >
         <button type="submit" name="resend" id='resend' >Resend Confirmation Email </button>
     </form>
+        <button onclick="window.location='../index.php'"  class="home" >Back to Home</button>
     </div>
 </div>
 </body>

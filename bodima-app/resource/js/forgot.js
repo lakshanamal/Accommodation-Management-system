@@ -8,7 +8,6 @@ $('#forgotForm').on('submit',function(){
         dataType:"json",
         success:function(data)
         {
-            console.log(data);
             if(data.email!=""){
                 $('#emailError').html(data.email);
                 $('#email').css("background-color", "rgb(255, 224, 224)");

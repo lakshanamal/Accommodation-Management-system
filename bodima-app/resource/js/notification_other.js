@@ -7,7 +7,6 @@ $(document).ready(function () {
             data:{count:count},// send to controller
             dataType: "json",
             success: function (data) {
-                console.log(data);
                     var content="";
                     var email="";
                     var noID="";
@@ -23,7 +22,7 @@ $(document).ready(function () {
                         content+='<li>'+
                         '<div onclick=seen("'+noID+'");class="notify" style="margin:5px; font-size:small; border-radius:10px;background-color:#c0c1c25b">'+
                         '<div class="msg_head" style="background-color:#70a6f769;border-radius:10px;">'+
-                            '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../bodima-app/resource/img/chicken.png" style="width:20px; height:20px;">'+
+                            '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../resource/img/chicken.png" style="width:20px; height:20px;">'+
                             '<p style="font-size:14px;">'+data.data[i]['massageHeader']+'</p>'+
                             
                             '<div style="text-align:right; padding:5px; line-height:80%;"><span style="font-size:10px; color:black; "> 35 min<br> ago</span></div>'+
@@ -37,7 +36,7 @@ $(document).ready(function () {
                         content+='<li>'+
                         '<div class="notify" style="margin:5px; font-size:small; border-radius:10px;background-color:#c0c1c25b">'+
                         '<div class="msg_head" style="background-color:#70a6f769;border-radius:10px;">'+
-                            '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../bodima-app/resource/img/pending.png" style="width:20px; height:20px;">'+
+                            '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../resource/img/pending.png" style="width:20px; height:20px;">'+
                             '<p style="font-size:14px;">'+data.data[i]['massageHeader']+'</p>'+
                             
                             '<div style="text-align:right; padding:5px; line-height:80%;"><span style="font-size:10px; color:black; "> 35 min<br> ago</span></div>'+
@@ -50,7 +49,7 @@ $(document).ready(function () {
                         content+='<li>'+
                         '<div class="notify" style="margin:5px; font-size:small; border-radius:10px;background-color:#c0c1c25b">'+
                         '<div class="msg_head" style="background-color:#70a6f769;border-radius:10px;">'+
-                        '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../bodima-app/resource/img/mortgage.png" style="width:20px; height:20px;">'+
+                        '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../resource/img/mortgage.png" style="width:20px; height:20px;">'+
                         '<p style="font-size:14px;">'+data.data[i]['massageHeader']+'</p>'+
                         
                         '<div style="text-align:right; padding:5px; line-height:80%;"><span style="font-size:10px; color:black; "> 35 min<br> ago</span></div>'+
@@ -65,7 +64,7 @@ $(document).ready(function () {
                         content+='<li>'+
                         '<div class="notify" style="margin:5px; font-size:small; border-radius:10px;background-color:#c0c1c25b">'+
                         '<div class="msg_head" style="background-color:#70a6f769;border-radius:10px;">'+
-                        '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../bodima-app/resource/img/time-is-money.png" style="width:20px; height:20px;">'+
+                        '<div style="display:flex; justify-content:space-between; align-items:center; padding-left:5px;"><img src="../resource/img/time-is-money.png" style="width:20px; height:20px;">'+
                         '<p style="font-size:14px;">'+data.data[i]['massageHeader']+'</p>'+                      
                         '<div style="text-align:right; padding:5px; line-height:80%;"><span style="font-size:10px; color:black; "> 35 min<br> ago</span></div>'+
                         '</div>'+
@@ -84,8 +83,6 @@ $(document).ready(function () {
                 
                     '</div>'+
                     '</li>';
-                   
-                        console.log(content);
                     document.querySelector('.notifi-record').innerHTML=content;
                     if(data.count > 0 ){
                         document.querySelector('.notification').classList.add('noti-circle');

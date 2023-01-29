@@ -17,7 +17,6 @@ function readUrl(event) {
 }
 
 function removeImg(event) {
-    console.log("nima");
     var photo = event.target.parentNode.parentNode;
     photo.querySelector('label>img').src = "https://img.icons8.com/carbon-copy/100/000000/compact-camera.png";
 

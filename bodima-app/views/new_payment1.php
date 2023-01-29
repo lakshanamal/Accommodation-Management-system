@@ -101,7 +101,7 @@
            
             <input type="hidden" name="merchant_id" value="1215562">    
             <input type="hidden" name="return_url" value='http://bodimaapp.com/controller/new_payment_Control.php?success<?php echo $s?>'>
-            <input type="hidden" name="cancel_url" value="http://bodimaapp.com/controller/payhereOnlineCancelIshanphp?request_id=<?php echo $request_id;?>">
+            <input type="hidden" name="cancel_url" value="http://bodimaapp.com/controller/payhereOnlineCancelController.php?request_id=<?php echo $request_id;?>">
             <input type="hidden" name="notify_url" value="http://bodimaapp.com/config/paycon.php"> 
             
             <!--reciever details  -->
