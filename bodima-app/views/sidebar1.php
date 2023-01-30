@@ -60,8 +60,6 @@
         <li><a href="../controller/boarderListController.php?boarderlist=1"><i class="fas fa-users"></i>My Boarders</a></li>
         <li><a href="../controller/boardingOwnerReportController.php?q=1"><i class="fas fa-print"></i>Print Reports</a></li>
         <li><a href="../views/postBoarding.php"><i class="fas fa-puzzle-piece"></i>Post New Ad</a></li>
-        <li><a href="../controller/foodpostviewN_control.php"><i class="fas fa-utensils"></i>Order Food</a></li>
-        <li><a href="../views/paymentFood_pending.php"><i class="fas fa-hamburger"></i>My Order Manager</a></li>
         <?php
         }?>
         <!-- ********************************************************************************************** -->
