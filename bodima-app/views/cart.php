@@ -458,7 +458,7 @@ require_once('../controller/rateConFood.php');
                   <script>
                     $(document).ready(function() {
                       $(document).on('click', '#add<?php echo $i; ?>', function() {
-                        if (document.getElementById('longTerm-check') != null || document.getElementById('longTerm-check').checked) {
+                        if (document.getElementById('longTerm-check') != null && document.getElementById('longTerm-check').checked) {
                           var term = 'longTerm';
                         } else {
                           var term = 'shortTerm';

@@ -231,9 +231,9 @@ background: linear-gradient(212deg, rgba(9,9,121,0.6828769298081987) 0%, rgba(0,
     color: rgba(128, 128, 128, 0.726);
 }
 .mid_L .f_post{
-    background-color: rgba(231, 231, 229, 0.795);
+    background-color: rgb(255, 255, 255);
     height: 170px;
-    
+    padding: 20px;
 }
 
 .mid_L .f_post img{
@@ -249,12 +249,13 @@ background: linear-gradient(212deg, rgba(9,9,121,0.6828769298081987) 0%, rgba(0,
     display: flex;
     margin: 15px;
     cursor: pointer;
-    box-shadow: 0 0 3px 0.1px rgba(136, 136, 136, 0.5); 
+    box-shadow: 0 0 3px 0.1px rgb(243, 243, 243); 
+    border-radius: 10px;
 }
 
 .mid_L .f_post:hover{
-    box-shadow: 0 0 10px 0.1px rgba(85, 85, 85, 0.5); 
-    background-color: rgba(223, 223, 223, 0.822);
+    box-shadow: 0 0 10px 0.1px rgba(220, 220, 220, 0.5); 
+    background-color: rgb(196, 228, 255);
 }
 
 .mid_L .f_post .f_content{
@@ -293,10 +294,9 @@ background: linear-gradient(212deg, rgba(9,9,121,0.6828769298081987) 0%, rgba(0,
 }
 
 .mid_L .f_content .short, .mid_L .f_content .long{
-    font-size:x-small;
+    font-size:large;
     display: inline;
-    
-    
+    border-radius: 5px;
 }
 
 .mid_L .f_content .short{

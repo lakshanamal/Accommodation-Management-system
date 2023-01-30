@@ -46,7 +46,7 @@ require_once ('adminChart.php');
                 </select>  
             </div>
             <script></script>
-            <div><a id="userPDF"><i class="fa fa-file-download fa-lg"></i> Get file here</a></div>
+            <di v><a id="userPDF"><i class="fa fa-file-download fa-lg"></i> Get file here</a></div>
         </div>
           <form id="flterReport" class="time" method="post">
           <div>

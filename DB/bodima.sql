@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 25, 2023 at 08:18 PM
+-- Generation Time: Jan 30, 2023 at 03:47 AM
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.1.30
 
@@ -287,7 +287,8 @@ INSERT INTO `food_post` (`F_post_id`, `FSid`, `ad_title`, `description`, `addres
 (35, 24, 'Araliya', 'Testey', '310/delgasduwa/dodanduwa', '', 'Both', 1, '21:00:00', 30, 3000, '../resource/Images/uploaded_foodpost/foodPost.jpeg', '2023-01-19 13:21:58', 0, 1),
 (36, 24, 'Araliya 2', '', '310/delgasduwa/dodanduwa', '', 'Short Term', 1, '21:00:00', 30, 3000, '../resource/Images/uploaded_foodpost/foodPost.jpg', '2023-01-19 13:33:59', 0, 1),
 (37, 24, 'Araliya 3', 'test', '310/delgasduwa/dodanduwa', '', 'Short Term', 1, '21:00:00', 30, 3000, '../resource/Images/uploaded_foodpost/patties.jpg', '2023-01-19 13:36:59', 0, 1),
-(38, 24, 'Resturent', 'Test resturent', '310/1,Delgasduwa, Dodanduwa', '', 'Short Term', 1, '21:00:00', 30, 3000, '../resource/Images/uploaded_foodpost/cheesekottu.jpg', '2023-01-19 20:52:41', 0, 1);
+(38, 24, 'Resturent', 'Test resturent', '310/1,Delgasduwa, Dodanduwa', '', 'Short Term', 1, '21:00:00', 30, 3000, '../resource/Images/uploaded_foodpost/cheesekottu.jpg', '2023-01-19 20:52:41', 0, 1),
+(40, 24, 'Rasa bojun', '', '310/delgasduwa/dodanduwa ', '', 'Short Term', 1, '21:00:00', 30, 3000, '../resource/Images/uploaded_foodpost/product1.jpg', '2023-01-29 08:43:00', 0, 1);
 
 -- --------------------------------------------------------
 
@@ -322,10 +323,16 @@ CREATE TABLE `food_request` (
 
 INSERT INTO `food_request` (`request_id`, `email`, `address`, `first_name`, `last_name`, `is_accepted`, `term`, `order_type`, `shedule`, `restaurant`, `F_post_id`, `order_id`, `total`, `phone`, `method`, `time`, `expireTime`, `deliveredTime`) VALUES
 (827, '{$email}', '{$address}', '{$first_name}', '{$last_name}', 0, '{$term}', '{$order_ty', '{$shedule}', '{$name}', 35, 0, 0, 0, '{$method}', '0000-00-00 00:00:00', '0000-00-00 00:00:00', ''),
-(828, '2018cs092@stu.ucsc.cmb.ac.lk', '310/delgasduwa/dodanduwa', 'Kavi', 'devindi', 0, 'shortTerm', 'dinner', '3:45 PM', 'Araliya', 35, 2147483647, 380, 755535393, 'cash', '2023-01-19 15:45:13', '2023-01-19 16:05:13', ''),
-(829, '2018cs092@stu.ucsc.cmb.ac.lk', '310/delgasduwa/dodanduwa', 'Kavi', 'devindi', 0, 'shortTerm', 'dinner', '3:48 PM', 'Araliya', 35, 2147483647, 380, 755535393, 'card', '2023-01-19 15:48:52', '2023-01-19 16:08:52', ''),
-(830, '2018cs092@stu.ucsc.cmb.ac.lk', '310/delgasduwa/dodanduwa', 'Kavi', 'devindi', 0, 'shortTerm', 'dinner', '3:55 PM', 'Araliya', 35, 63, 380, 755535393, 'cash', '2023-01-19 15:55:25', '2023-01-19 16:15:25', ''),
-(831, 'lakshanamal200@gmail.com', '310/delgasduwa/dodanduwa', 'Kalana', 'Ravishanka', 4, 'shortTerm', 'dinner', '9:00 PM', 'Araliya', 35, 223480, 760, 755535393, 'cash', '2023-01-19 21:01:23', '2023-01-19 21:13:51', '09:04:35pm');
+(828, '2018cs092@stu.ucsc.cmb.ac.lk', '310/delgasduwa/dodanduwa', 'Kavi', 'devindi', 1, 'shortTerm', 'dinner', '3:45 PM', 'Araliya', 35, 2147483647, 380, 755535393, 'cash', '2023-01-19 15:45:13', '2023-01-29 23:27:52', ''),
+(829, '2018cs092@stu.ucsc.cmb.ac.lk', '310/delgasduwa/dodanduwa', 'Kavi', 'devindi', 1, 'shortTerm', 'dinner', '3:48 PM', 'Araliya', 35, 2147483647, 380, 755535393, 'card', '2023-01-19 15:48:52', '2023-01-29 23:27:52', ''),
+(830, '2018cs092@stu.ucsc.cmb.ac.lk', '310/delgasduwa/dodanduwa', 'Kavi', 'devindi', 4, 'shortTerm', 'dinner', '3:55 PM', 'Araliya', 35, 63, 380, 755535393, 'cash', '2023-01-19 15:55:25', '2023-01-29 23:28:08', '11:18:59pm'),
+(831, 'lakshanamal200@gmail.com', '310/delgasduwa/dodanduwa', 'Kalana', 'Ravishanka', 4, 'shortTerm', 'dinner', '9:00 PM', 'Araliya', 35, 223480, 760, 755535393, 'cash', '2023-01-19 21:01:23', '2023-01-19 21:13:51', '09:04:35pm'),
+(833, 'amal.l@x-venture.io', '', 'Amal', 'Lakshan', 2, 'shortTerm', 'lunch', '1:22 PM', 'Araliya', 35, 739670, 380, 755535393, '', '2023-01-29 13:26:15', '2023-01-29 13:46:15', ''),
+(834, 'amal.l@x-venture.io', '', 'Amal', 'Lakshan', 4, 'shortTerm', 'lunch', '1:30 PM', 'Araliya', 35, 328308, 380, 755535393, '', '2023-01-29 13:30:33', '2023-01-29 13:50:33', '11:18:48pm'),
+(835, 'amal.l@x-venture.io', '310/delgasduwa/dodanduwa', 'Amal', 'Lakshan', 2, 'shortTerm', 'lunch', '1:34 PM', 'Araliya', 35, 240648, 380, 755535393, 'cash', '2023-01-29 13:34:11', '2023-01-29 13:54:11', ''),
+(836, 'amal.l@x-venture.io', '310/delgasduwa/dodanduwa', 'Amal', 'Lakshan', 2, 'shortTerm', 'lunch', '1:38 PM', 'Araliya', 35, 277840, 380, 755535393, 'cash', '2023-01-29 13:38:45', '2023-01-29 13:58:45', ''),
+(837, 'amal.l@x-venture.io', '', 'Amal', 'Lakshan', 4, 'shortTerm', 'lunch', '1:39 PM', 'Araliya', 35, 582055, 380, 755535393, '', '2023-01-29 13:39:47', '2023-01-29 13:59:47', '11:18:42pm'),
+(838, 'amal.l@x-venture.io', '310/delgasduwa/dodanduwa', 'Amal', 'Lakshan', 4, 'shortTerm', 'dinner', '11:15 PM', 'Araliya', 35, 9259, 380, 755535393, 'cash', '2023-01-29 23:15:18', '2023-01-29 23:27:59', '11:18:30pm');
 
 -- --------------------------------------------------------
 
@@ -477,9 +484,16 @@ INSERT INTO `notifications` (`notify_id`, `type_number`, `from_level`, `from_id`
 (54, 2, 'student', 51, 'food_supplier', 24, 'New order Arrived', 'customer name : Kavi devindi<br>order id : 167412315420<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-19 15:42:34', '../views/orders.php', 0),
 (55, 2, 'student', 51, 'food_supplier', 24, 'New order Arrived', 'customer name : Kavi devindi<br>order id : 167412325152<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-19 15:44:11', '../views/orders.php', 0),
 (56, 2, 'student', 51, 'food_supplier', 24, 'New order Arrived', 'customer name : Kavi devindi<br>order id : 167412331318<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-19 15:45:13', '../views/orders.php', 0),
-(57, 2, 'student', 51, 'food_supplier', 24, 'New order Arrived', 'customer name : Kavi devindi<br>order id : 167412353292<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-19 15:48:52', '../views/orders.php', 0),
 (58, 2, 'student', 51, 'food_supplier', 24, 'New order Arrived', 'customer name : Kavi devindi<br>order id : 63<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-19 15:55:25', '../views/orders.php', 0),
-(60, 1, 'food_supplier', 24, 'boardings_owner', 7, 'Your Order Accepted', 'Resturant : Araliya<br>Order id :223480<br>Total amount :760', '2023-01-19 21:03:51', '../views/paymentFood_accept.php', 0);
+(60, 1, 'food_supplier', 24, 'boardings_owner', 7, 'Your Order Accepted', 'Resturant : Araliya<br>Order id :223480<br>Total amount :760', '2023-01-19 21:03:51', '../views/paymentFood_accept.php', 0),
+(62, 2, 'boarder', 106, 'food_supplier', 24, 'New order Arrived', 'customer name : Amal Lakshan<br>order id : 739670<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-29 13:26:15', '../views/orders.php', 0),
+(63, 2, 'boarder', 106, 'food_supplier', 24, 'New order Arrived', 'customer name : Amal Lakshan<br>order id : 328308<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-29 13:30:33', '../views/orders.php', 0),
+(64, 2, 'boarder', 106, 'food_supplier', 24, 'New order Arrived', 'customer name : Amal Lakshan<br>order id : 240648<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-29 13:34:11', '../views/orders.php', 0),
+(65, 2, 'boarder', 106, 'food_supplier', 24, 'New order Arrived', 'customer name : Amal Lakshan<br>order id : 277840<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-29 13:38:45', '../views/orders.php', 0),
+(66, 2, 'boarder', 106, 'food_supplier', 24, 'New order Arrived', 'customer name : Amal Lakshan<br>order id : 582055<p style=\"font-size:12px; color:black;\">Accept the order before timeout!</p>', '2023-01-29 13:39:47', '../views/orders.php', 0),
+(68, 1, 'food_supplier', 24, 'boarder', 105, 'Your Order Accepted', 'Resturant : Araliya<br>Order id :2147483647<br>Total amount :380<p style=\"font-size:12px; color:black;\">Please do the card payment', '2023-01-29 23:17:52', '../views/paymentFood_accept.php', 0),
+(69, 1, 'food_supplier', 24, 'boarder', 106, 'Your Order Accepted', 'Resturant : Araliya<br>Order id :9259<br>Total amount :380', '2023-01-29 23:17:59', '../views/paymentFood_accept.php', 0),
+(70, 1, 'food_supplier', 24, 'boarder', 105, 'Your Order Accepted', 'Resturant : Araliya<br>Order id :63<br>Total amount :380', '2023-01-29 23:18:08', '../views/paymentFood_accept.php', 0);
 
 -- --------------------------------------------------------
 
@@ -568,7 +582,13 @@ INSERT INTO `order_item` (`itemID`, `item_name`, `quantity`, `order_id`) VALUES
 (367, 'Kottu ', 1, 2147483647),
 (368, 'Kottu ', 1, 2147483647),
 (369, 'Kottu ', 1, 63),
-(370, 'Kottu ', 2, 223480);
+(370, 'Kottu ', 2, 223480),
+(372, 'Kottu ', 1, 739670),
+(373, 'Kottu ', 1, 328308),
+(374, 'Kottu ', 1, 240648),
+(375, 'Kottu ', 1, 277840),
+(376, 'Kottu ', 1, 582055),
+(377, 'Kottu ', 1, 9259);
 
 -- --------------------------------------------------------
 
@@ -622,7 +642,9 @@ INSERT INTO `product` (`id`, `FSid`, `F_post_id`, `product_name`, `image`, `pric
 (47, 24, 35, 'Kottu', '../resource/Images/uploaded_foodpost/pasta.jpg', 380, 0, 1, 1, 1),
 (48, 24, 36, 'Kottu', '../resource/Images/uploaded_foodpost/burger.jpg', 380, 0, 1, 0, 1),
 (49, 24, 37, 'Kottu', '../resource/Images/uploaded_foodpost/pasta.jpg', 380, 0, 1, 0, 1),
-(50, 24, 38, 'Kottu', '../resource/Images/uploaded_foodpost/pasta.jpg', 490, 0, 1, 0, 1);
+(50, 24, 38, 'Kottu', '../resource/Images/uploaded_foodpost/pasta.jpg', 490, 0, 1, 0, 1),
+(54, 24, 40, '', '../img/pastry.jpg', 560, 1, 1, 1, 1),
+(55, 24, 40, 'Kottu', '../resource/Images/uploaded_foodpost/product1.png', 690, 1, 1, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -639,6 +661,14 @@ CREATE TABLE `rate` (
   `uMsg` varchar(100) NOT NULL,
   `dReview` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `rate`
+--
+
+INSERT INTO `rate` (`rateId`, `ratingpostid`, `email`, `uName`, `uReview`, `uMsg`, `dReview`) VALUES
+(9, 36, 'lakshanamal100@gmail.com', 'Amal', 5, 'Superb', '2023-01-29 06:27:48'),
+(10, 36, 'amal.l@x-venture.io', 'Kalana', 5, 'Good', '2023-01-29 06:27:03');
 
 -- --------------------------------------------------------
 
@@ -734,7 +764,9 @@ CREATE TABLE `student` (
 
 INSERT INTO `student` (`Reg_id`, `email`, `first_name`, `last_name`, `password`, `token`, `level`, `NIC`, `address`, `user_accepted`, `profileimage`, `reg_date`) VALUES
 (51, '2018cs092@stu.ucsc.cmb.ac.lk', 'Kavi', 'devindi', '32b3a23f849bb81092bf605d17a6dff99a1da535', '03a9c2128f9870a0c78d125b238a3b58a21230c68f92249c23ad0452e485648bac92f1dc2604beb07cbc3e9c1df46debe52d', 'student', '971741546V', '', 1, '../resource/Images/uploaded_profile_Image/1 (2).jpg', '2023-01-18'),
-(52, 'amal.l@x-venture.io', 'Amal', 'Lakshan', '32b3a23f849bb81092bf605d17a6dff99a1da535', 'bebb4842e59a35e8e54916614be14246ccd611e5f7ff53e11e6c759588698105506d2b0da5f6e664b111608cccdbd88fbf44', 'student', '971741556v', 'kumarakanda', 3, '../resource/Images/uploaded_profile_Image/IMG_E2238.JPG', '2023-01-25');
+(52, 'amal.l@x-venture.io', 'Amal', 'Lakshan', '32b3a23f849bb81092bf605d17a6dff99a1da535', 'bebb4842e59a35e8e54916614be14246ccd611e5f7ff53e11e6c759588698105506d2b0da5f6e664b111608cccdbd88fbf44', 'student', '971741556v', 'kumarakanda', 3, '../resource/Images/uploaded_profile_Image/IMG_E2238.JPG', '2023-01-25'),
+(53, 'nassimabderahmanfront@gmail.com', 'nassim', 'Lakshan', '32b3a23f849bb81092bf605d17a6dff99a1da535', 'c7d8eb18434ee232e7e844c1ef66818c366c05f810d376a57de241bdf9bc15de7b46ec83bb1c30d6b5208ac82d71c1db0752', 'student', '971741566v', '', 0, '../resource/Images/a.jpg', '2023-01-26'),
+(54, 'salmaoujanafront@gmail.com', 'KalanaR', 'Ravi', '32b3a23f849bb81092bf605d17a6dff99a1da535', 'f94c5604ba083e7db060d29ffa2c46a9f641769c1366e6ff7db5c8e45a22dfc476962f97b414607f85c97bdfe459b9441e8e', 'student', '971741566v', '', 1, '../resource/Images/a.jpg', '2023-01-26');
 
 --
 -- Triggers `student`
@@ -993,13 +1025,13 @@ ALTER TABLE `confirm_rent`
 -- AUTO_INCREMENT for table `food_post`
 --
 ALTER TABLE `food_post`
-  MODIFY `F_post_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
+  MODIFY `F_post_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `food_request`
 --
 ALTER TABLE `food_request`
-  MODIFY `request_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=832;
+  MODIFY `request_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=839;
 
 --
 -- AUTO_INCREMENT for table `food_supplier`
@@ -1035,13 +1067,13 @@ ALTER TABLE `notification`
 -- AUTO_INCREMENT for table `notifications`
 --
 ALTER TABLE `notifications`
-  MODIFY `notify_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
+  MODIFY `notify_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=71;
 
 --
 -- AUTO_INCREMENT for table `order_item`
 --
 ALTER TABLE `order_item`
-  MODIFY `itemID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=371;
+  MODIFY `itemID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=378;
 
 --
 -- AUTO_INCREMENT for table `payfee`
@@ -1053,13 +1085,13 @@ ALTER TABLE `payfee`
 -- AUTO_INCREMENT for table `product`
 --
 ALTER TABLE `product`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=57;
 
 --
 -- AUTO_INCREMENT for table `rate`
 --
 ALTER TABLE `rate`
-  MODIFY `rateId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `rateId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `ratefood`
@@ -1083,7 +1115,7 @@ ALTER TABLE `set_notification`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `Reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `Reg_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
 
 --
 -- Constraints for dumped tables

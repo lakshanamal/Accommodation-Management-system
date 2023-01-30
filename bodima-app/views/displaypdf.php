@@ -1,5 +1,5 @@
-<?php 
-
+<?php
+session_start();
 function displaypdf($result){
  
         date_default_timezone_set("Asia/Colombo");
@@ -35,7 +35,7 @@ function displaypdf($result){
       
       </style>
       <h4 align="center">Payment Report - Monthly Rent </h4><br /> 
-      Reciver : Rohini Wimalarathne<br/>
+      Reciver :'.  $_SESSION['first_name'] .' '. $_SESSION['last_name'] .'<br/>
 
       Genarated date : '.date("Y/m/d  H:i:s") .'<br/>
 
@@ -46,13 +46,13 @@ function displaypdf($result){
         
             <tr>  
                 <th width="25%">Month</th>  
-                <th width="20%">amount</th>  
-                <th width="20%">date</th>  
-                <th width="20%">time</th>  
-                <th width="15%">method</th>
+                <th width="20%">Amount</th>  
+                <th width="20%">Date</th>  
+                <th width="20%">Boarder Name</th>  
+                <th width="15%">Method</th>
            </tr>  
       ';  
-      $payments=unserialize($_GET['pay']);
+      // $payments=unserialize($_GET['pay']);
       $content .=fetchdata_pay($result);  
       $content .= '</table>';  
       $obj_pdf->writeHTML($content);  
@@ -68,22 +68,19 @@ function displaypdf($result){
 foreach($results as $row){ 
     $output2 .="
     <tr>
-    <td>".$row['paidDateTime']."</td>
+
+    <td>" . $row['year'] . ' ' . date('F', mktime(0, 0, 0, $row['month'], 0, 0)) . "</td>
+    <td>".$row['amount']. "</td>
+    <td>" . $row['paidDateTime'] . "</td>
     <td>".$row['first_name']."</td>
-    <td>".$row['year'].' '.date('F',mktime(0,0,0,$row['month'],0,0))."</td>
-    <td>".$row['amount']."</td>
     <td>".$row['cash_card']."</td>
     <td>000".$row['B_post_id']."</td>
     </tr>
 ";
-    }
+  }
 
 return $output2;
 }
 
-$results=unserialize($_GET['result']);
-// displaypdf($results);
-print_r($results);
-
-
-?>
+$results=unserialize($_GET['results']);
+displaypdf($results);
