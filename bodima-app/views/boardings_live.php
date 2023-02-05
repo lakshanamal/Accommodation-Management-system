@@ -36,7 +36,9 @@
 				<input type="text" name="search_text" id="search_text" placeholder="Search by any key word" class="form-control" />
 			</div>
 			<div class="outer_result_block">
-				<div id="result"></div>
+				<div id="result">
+					hj
+				</div>
 
 			</div>
 			<div class="right_bar">

@@ -3,11 +3,6 @@
 class boarding{
 
     public static function postBoarding($id,$Hnumber,$lane,$city,$district,$description,$creattime,$title,$image_name1,$upload_to,$individual,$location,$latitude,$longitude,$gender,$Pcount,$CPperson,$Keymoney,$Lifespan,$Aamount,$connection){
-
-        //$hh=$Hnumber;
-        //echo $hh;
-        //echo $individual;
-        //echo "dssssss";
         
       $query="INSERT INTO boarding_post (BOid,category,girlsBoys,person_count,cost_per_person,rating,image,house_num,lane,city,district,description,location,latitude,longitude,lifespan,post_amount,review,keymoney,title,create_time)
         VALUES('{$id}','{$individual}','{$gender}','{$Pcount}','{$CPperson}','8','{$upload_to}{$image_name1}','{$Hnumber}','{$lane}','{$city}','{$district}','{$description}','{$location}','$latitude' , '$longitude' ,'{$Lifespan}','{$Aamount}','ishan','{$Keymoney}','{$title}','{$creattime}')";
@@ -17,6 +12,24 @@ class boarding{
         if($result){
             echo "Sucessfull first <br>";
         }else{
+            echo "Unsucessfull first <br>";
+        }
+    }
+
+    public static function updatePost($title,$description,$Hnumber,$lane,$city, $district,$Keymoney, $upload_to,$image_name1,$Pcount,$CPperson,$category,$gender,$postId, $connection)
+    {
+
+        $query = "UPDATE boarding_post  SET  title = '{$title}', description = '{$description}' , house_num = '{$Hnumber}' , lane = '{$lane}' , city = '{$city}', district = '{$district}' , 
+        keymoney = '{$Keymoney}' , image = '{$upload_to}{$image_name1}' , person_count =  '{$Pcount}' ,  cost_per_person = '{$CPperson}', 
+        category = '{$category}' , girlsBoys = '{$gender}' WHERE B_post_id  = '{$postId}' ";
+
+        echo $query;
+        
+        $result = mysqli_query($connection, $query);
+
+        if ($result) {
+            echo "Sucessfull first <br>";
+        } else {
             echo "Unsucessfull first <br>";
         }
     }

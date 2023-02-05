@@ -2,8 +2,6 @@
     require_once ('../config/database.php');
     require_once ('../models/post_boarding.php');
     session_start();
-    // print_r($_POST['Aamount']);
-
 ?>
 
 <?php
@@ -50,12 +48,6 @@ $values=array();
     }else{
         $value['district'] = $district;
     }
-
-   // $location=$_POST['location'];
-    //if(empty($_POST['location']) || strlen(trim($_POST['location']))<1){
-      //  $errors[]='*location is required';
-    //}
-
     
     if(!isset($_POST['individual'])){
         $errors['err5']='*Select one option';

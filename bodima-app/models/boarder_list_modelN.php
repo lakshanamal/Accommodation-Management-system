@@ -99,8 +99,15 @@ class boarder_list_modelN{
         $result = mysqli_query($connection, $query);
         return $result;
       }
+
+   public static function get_my_post($connection,$BOid)
+      {
+        $query="SELECT * FROM `boarding_post` WHERE BOid={$BOid}";
+        $result = mysqli_query($connection, $query);
+        return $result;
+      }
     }
-    ?>
+?>
 
 
  
